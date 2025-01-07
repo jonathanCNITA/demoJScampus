@@ -10,15 +10,16 @@
         <script type="text/javascript">
 
         /* Section 1 */   
-
-        var name = "Joe";
+        // Creation et assignation des varibles
+        var name = "Joe"; // Je creée une varible name et j'assigne la String "Joe"
         var city = 'London';
         var age = 32;
         var isRed = true;
         var isOld = age > 80;
-
+        // création de la variable previousJobs la valeur est un tableau       
         var previousJobs = ['lawyer', 'developper', 'Professionnal climber'];
 
+        // Fonction info avec 2 paramètres qui log en fonction des valeurs
         function info(height, weight) {
             if (height > 180) {
                 console.log('Vous êtes grand');
@@ -31,22 +32,26 @@
                 console.log('Good !')
             }
         }
-
+        
+        // Premier appel de la fonction Info
         info(165, 45);
-
+        
+        // Creation variable taille poids
         var myHeight = 175;
         var myWeight = 86;
-
+        // invocation info avec myHeight et myWeight
         info(myHeight, myWeight);
 
         info(myHeight + 15, myWeight - 100);
 
+        // Fonction qui mtransforme une string en majuscule
         function toUpper(variable) {
             return variable.toUpperCase();
         }
 
         var upperName = toUpper(name);
 
+    
         for (i = 0; i < 3; i = i + 1) {
             console.log(previousJobs[i]);
         }
@@ -59,7 +64,7 @@
 
         /* Section 3 */
 
-        // console.log(myVariable);
+        //console.log(myVariable);
 
         </script>
 
